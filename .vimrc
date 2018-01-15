@@ -21,6 +21,12 @@ set viminfo=h,'500,<10000,s1000,/1000,:1000
 set backspace=indent,eol,start
 set fileformats=unix,mac,dos
 
+" serch through every subdirectory  provides tab-completion for all
+" file-related tasks
+set path+=**
+
+" display all matching file when we tab complete
+set wildmenu
 
 " Visual block mode is much more useful than Visual mode (swap the two)
 nnoremap v <C-V>
