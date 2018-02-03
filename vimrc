@@ -1,13 +1,13 @@
-set rtp+=~/.vim/bundle/vundle/
 set title
 set nocompatible
 set titleold=
 set nomore
 set autoread
 set autowrite
+set relativenumber
 set number
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
@@ -15,11 +15,20 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set listchars=tab:>~,nbsp:_,trail:.
-set list
-set viminfo=h,'500,<10000,s1000,/1000,:1000
+"set listchars=tab:>~,nbsp:_,trail:.
+"set list
+"set viminfo=h,'500,<10000,s1000,/1000,:1000
 set backspace=indent,eol,start
 set fileformats=unix,mac,dos
+
+" execute pathogen
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+" map nerdtree to command:ne
+let mapleader = ","
+nmap <leader>n :NERDTree<CR>
 
 " serch through every subdirectory  provides tab-completion for all
 " file-related tasks
@@ -40,8 +49,8 @@ set virtualedit=block
 
 syntax enable
 filetype plugin on
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 let g:netrw_banner=0
 let g:netrw_browse_split=4
@@ -53,3 +62,11 @@ let g:netrw_list_hide.=',\(^\|\s\s)\zs\.\S\+'
 " mark the 81 column in diffrent color for code wrapping
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
+
+" add powerline plugin
+set rtp+=/usr/local/lib/python3.5/dist-packages/powerline/bindings/vim
+set laststatus=2
+set noshowmode
+set showtabline=2
+set t_Co=256
+set encoding=utf-8

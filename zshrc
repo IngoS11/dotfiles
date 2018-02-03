@@ -92,3 +92,5 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# cd /vagrant && source env/bin/activate
+prompt_context() {}
