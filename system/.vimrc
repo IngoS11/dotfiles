@@ -63,10 +63,3 @@ let g:netrw_list_hide.=',\(^\|\s\s)\zs\.\S\+'
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
 
-" add powerline plugin
-set rtp+=/usr/local/lib/python3.5/dist-packages/powerline/bindings/vim
-set laststatus=2
-set noshowmode
-set showtabline=2
-set t_Co=256
-set encoding=utf-8
