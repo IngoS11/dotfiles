@@ -1,7 +1,7 @@
 mash = {"⌘", "⌥", "⌃"}
 
+require "apps"
 require "grid"
--- require "apps"
 
 hs.hotkey.bind(mash, "r", function() hs.reload(); end)
 hs.hotkey.bind(mash, "s", function() hs.eventtap.keyStrokes('¯\\_(ツ)_/¯'); end)
