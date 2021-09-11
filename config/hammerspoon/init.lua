@@ -1,0 +1,9 @@
+mash = {"⌘", "⌥", "⌃"}
+
+require "grid"
+-- require "apps"
+
+hs.hotkey.bind(mash, "r", function() hs.reload(); end)
+hs.hotkey.bind(mash, "s", function() hs.eventtap.keyStrokes('¯\\_(ツ)_/¯'); end)
+hs.hotkey.bind(mash, "a", function() hs.caffeinate.lockScreen(); end)
+hs.alert.show("Hammerspoon config loaded")
