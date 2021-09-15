@@ -9,6 +9,7 @@ end
 --- arrows: move window
 hs.hotkey.bind(mash, "left", function() hs.grid.pushWindowLeft() end)
 hs.hotkey.bind(mash, "right", function() hs.grid.pushWindowRight() end)
+hs.hotkey.bind(mash, "h", function() hs.grid.pushWindowRight() end)
 hs.hotkey.bind(mash, "up", function() hs.grid.pushWindowUp() end)
 hs.hotkey.bind(mash, "down", function() hs.grid.pushWindowDown() end)
 
